@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Product Comparison</title>
+<style>
+  body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+  }
+  
+  .container {
+    text-align: center;
+  }
+  
+  input[type="text"] {
+    padding: 10px;
+    margin: 5px;
+    width: 250px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  button {
+    padding: 10px 20px;
+    margin: 5px;
+    border: none;
+    border-radius: 5px;
+    background-color: #007bff;
+    color: #fff;
+    cursor: pointer;
+  }
+</style>
+</head>
+<body>
+<div class="container">
+  <form action="/compare" method="post">
+    <input type="text" name="p1" class="inp1" placeholder="Enter Product Name 1">
+    <br>
+    <input type="text" name="p2" class="inp2" placeholder="Enter Product Name 2">
+    <br>
+    <input type="submit" class="btn" value="Compare">
+  </form>
+</div>
+<h2 class="prompt"></h2>
+<h4 class="response"></h4>
+<script type="module" src="../script.js"></script>
+</body>
+</html>
